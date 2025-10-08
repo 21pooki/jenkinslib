@@ -1,19 +1,28 @@
 // File: src/com/example/utils/StringUtil.groovy
-package com.example.utils
+package org.company
 
-class StringUtil implements Serializable {
-    
-    def script
-
-    StringUtil(script) {
-        this.script = script
-    }
-
-    def info(String message) {
-        script.echo "✅ [INFO] ${message}"
-    }
-
-    def warning(String message) {
-        script.echo "⚠️ [WARN] ${message}"
+class Utils implements Serializable {
+    def sayHello(name) {
+        return "Hello, ${name}!"
     }
 }
+
+
+// package com.example.utils
+
+// class StringUtil implements Serializable {
+    
+//     def script
+
+//     StringUtil(script) {
+//         this.script = script
+//     }
+
+//     def info(String message) {
+//         script.echo "✅ [INFO] ${message}"
+//     }
+
+//     def warning(String message) {
+//         script.echo "⚠️ [WARN] ${message}"
+//     }
+// }
